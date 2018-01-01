@@ -5,11 +5,23 @@ AWX
 
 AWX provides a web-based user interface, REST API, and task engine built on top of [Ansible](https://github.com/ansible/ansible). It is the upstream project for [Tower](https://www.ansible.com/tower), a commercial derivative of AWX.  
 
-To install AWX, please view the [Install guide](./INSTALL.md).
-
 To learn more about using AWX, and Tower, view the [Tower docs site](http://docs.ansible.com/ansible-tower/index.html).
 
 The AWX Project Frequently Asked Questions can be found [here](https://www.ansible.com/awx-project-faq).
+
+Quick Start
+-----------
+
+You can start by deploying all-in-one `AWX` using docker compose:
+
+```
+mkdir awx && cd awx
+curl -sSL -o docker-compose.yml https://gist.githubusercontent.com/muayyad-alsadi/4f2db7a0a5ed4e6b8da0033cb1da47ab/raw/ed44a5d5679b2be241fbf9b00f399dfcf30bef94/docker-compose.yml
+docker-compose up
+```
+
+For more details deployment options, building your own AWX images, your custom branding, ..etc.
+please view the [Install guide](./INSTALL.md).
 
 Contributing
 ------------
